@@ -1,0 +1,79 @@
+main {
+  min-height: calc(100vh - 32px);
+  display: flex;
+}
+
+aside {
+  width: 20%;
+  min-width: 220px;
+  background-color: #f1f1f1;
+  padding: 10px 0;
+}
+
+aside hr {
+  margin: 10px 15px;
+}
+
+aside #projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+aside #projects .project {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 15px;
+  margin: 0 15px;
+  gap: 10px;
+  font-size: large;
+  align-items: center;
+  min-height: 40px;
+  border-radius: 10px;
+  transition: 300ms;
+  border: none;
+  cursor: pointer;
+}
+
+aside #projects .project:hover {
+  background-color: #b8b8b8;
+}
+
+aside #projects .project svg {
+  width: 25px;
+}
+
+#tasks {
+  padding: 10px 0;
+}
+
+#tasks h1 {
+  margin-bottom: 15px;
+}
+
+#tasks .project-tasks {
+  margin: 15px 0;
+}
+
+#tasks .project-tasks .container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#tasks .project-tasks .container .task {
+  display: flex;
+  gap: 10px;
+}
+
+#tasks #addTask {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#tasks #addTask:hover {
+  background-color: #b8b8b8;
+}

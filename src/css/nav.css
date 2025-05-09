@@ -1,0 +1,15 @@
+nav {
+  background-color: black;
+  color: white;
+}
+
+nav a {
+  color: white;
+}
+
+nav .flex {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
