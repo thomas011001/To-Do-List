@@ -16,11 +16,15 @@ function TaskCoreFactory(task) {
 		`;
     container.appendChild(task);
 
-    // task.querySelector("input").addEventListener("click", {
-    // 	finished = !finished
+    task.querySelector("input").addEventListener("click", () => {
+      finished = !finished;
 
-    // 	storage.editTask("default", )
-    // });
+      storage.editTask(
+        "default",
+        { title, project: "default" },
+        { title, project: "default", finished }
+      );
+    });
   };
 
   return {

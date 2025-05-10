@@ -28,6 +28,7 @@ function projectCoreFactory(project) {
 
     document.getElementById("addTask").addEventListener("click", () => {
       const taskTitle = document.getElementById("taskName").value;
+      if (!taskTitle) return;
       document.getElementById("taskName").value = "";
       project = title;
 
